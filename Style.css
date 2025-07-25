@@ -1,1 +1,83 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  padding: 20px;
+}
 
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.month-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+tr.holiday td {
+  background-color: white;
+  color: red;
+  font-weight: bold;
+}
+
+.present {
+  background-color: #4ade80 !important;
+  color: white;
+}
+
+.absent {
+  background-color: #f87171 !important;
+  color: white;
+}
+
+td.status-cell {
+  cursor: pointer;
+}
+
+td.status-cell:hover {
+  opacity: 0.9;
+}
+
+.tooltip {
+  font-size: 0.75rem;
+  color: #6b7280;
+  display: block;
+  margin-top: 5px;
+}
